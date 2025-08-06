@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IlluminAudio</title>
+  <!-- Preconnect for Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <!-- Import a clean, modern typeface -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Navigation bar fixed at the top -->
+  <nav class="navbar">
+    <div class="logo">
+      <!-- Logo image and label name -->
+      <img src="images/logo.png" alt="IlluminAudio logo" class="logo-img" />
+      <span class="logo-text">IlluminAudio</span>
+    </div>
+    <ul class="nav-links">
+      <li><a id="nav_home" href="#home">Inicio</a></li>
+      <li><a id="nav_about" href="#about">Sobre Nosotros</a></li>
+      <li><a id="nav_artists" href="#artists">Artistas</a></li>
+      <li><a id="nav_statement" href="#statement">Declaración</a></li>
+      <li><a id="nav_bios" href="#bios">Biografías</a></li>
+      <li><a id="nav_shop" href="#ecommerce">Tienda</a></li>
+      <li><a id="nav_media" href="#media">Multimedia</a></li>
+      <li><a id="nav_videos" href="#videos">Videos</a></li>
+      <li><a id="nav_releases" href="#releases">Lanzamientos</a></li>
+      <li><a id="nav_contact" href="#contact">Contacto</a></li>
+    </ul>
+    <select id="lang-switcher" class="lang-switcher">
+      <option value="es">Español</option>
+      <option value="en">English</option>
+      <option value="zh">中文</option>
+      <option value="fr">Français</option>
+      <option value="de">Deutsch</option>
+      <option value="ja">日本語</option>
+      <option value="pt">Português</option>
+      <option value="it">Italiano</option>
+      <option value="ru">Русский</option>
+      <option value="ar">العربية</option>
+      <option value="hi">हिन्दी</option>
+    </select>
+  </nav>
+
+  <!-- Hero section with bold statement and call to action -->
+  <header class="hero" id="home">
+    <div class="hero-content">
+      <h1 id="hero_heading">IlluminAudio</h1>
+      <p id="hero_text">
+        Iluminamos el sonido del futuro. Explora nuestros artistas y déjate
+        sorprender por la música generada con inteligencia artificial.
+      </p>
+      <a href="#releases" class="btn" id="hero_button">Descubrir Música</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- Artists Section -->
+    <!-- About Section -->
+    <section class="about" id="about">
+      <h2 id="about_heading">Sobre Nosotros</h2>
+      <p id="about_p1">
+        IlluminAudio es un sello discográfico nacido en la intersección entre música,
+        tecnología y cultura global. Fundado en 2025, es el primer label 100 %
+        impulsado por inteligencia artificial que no solo crea música, sino que
+        desarrolla artistas virtuales con identidad propia, capaces de interactuar
+        con fans, componer en tiempo real y adaptarse a tendencias culturales al
+        instante.
+      </p>
+      <p id="about_p2">
+        Nuestra filosofía es clara: “Iluminamos el sonido del futuro”. El logo —
+        una pirámide rota flanqueada por aliens y robots con audífonos — simboliza
+        la ruptura de los límites entre lo humano y lo artificial, y la llegada de
+        nuevas formas de arte.
+      </p>
+    </section>
+    <section class="artists" id="artists">
+      <h2 id="artists_heading">Artistas</h2>
+      <div class="artist-grid">
+        <div class="artist-card" data-artist="kairo">
+          <img src="images/kairo.png" alt="KAIRO" />
+          <h3>KAIRO</h3>
+          <!-- Genre and tagline have IDs for language switching -->
+          <p id="genre_kairo">Género: Reggaetón, Trap, Hip‑Hop</p>
+          <p id="tagline_kairo">La voz callejera del futuro.</p>
+        </div>
+        <div class="artist-card" data-artist="nova_lane">
+          <img src="images/nova_lane.png" alt="NOVA LANE" />
+          <h3>NOVA LANE</h3>
+          <p id="genre_nova">Género: R&B, Pop, Country</p>
+          <p id="tagline_nova">Cruzando fronteras sonoras.</p>
+        </div>
+        <div class="artist-card" data-artist="zenixx">
+          <img src="images/zenixx.png" alt="ZENIXX" />
+          <h3>ZENIXX</h3>
+          <p id="genre_zenixx">Género: Afrobeats, Dancehall</p>
+          <p id="tagline_zenixx">Energía y unión cultural.</p>
+        </div>
+        <div class="artist-card" data-artist="lex_vox">
+          <img src="images/lex_vox.png" alt="LEX VOX" />
+          <h3>LEX VOX</h3>
+          <p id="genre_lex">Género: Podcast Host</p>
+          <p id="tagline_lex">Maestro de las entrevistas.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Artist Biographies Section -->
+    <section class="artist-bios" id="bios">
+      <h2 id="bios_heading">Biografías</h2>
+      <div class="artist-bio">
+        <img src="images/kairo.png" alt="KAIRO" class="bio-photo" />
+        <div class="bio-text">
+          <h3>KAIRO</h3>
+          <p id="bio_kairo">
+            KAIRO es la voz callejera del futuro. Nacido de algoritmos entrenados
+            con lo mejor de Puerto Rico, Panamá y New York, su flow combina
+            lo clásico del reggaetón con la agresividad del trap y la
+            versatilidad del hip‑hop. Con letras coreables y beats explosivos,
+            domina desde las tarimas underground hasta festivales globales. Sus
+            rimas narran historias de superación, fiesta y cultura urbana,
+            conectando con una generación que busca autenticidad. KAIRO no solo
+            canta; crea experiencias sonoras que fusionan tradición y
+            vanguardia.
+          </p>
+        </div>
+      </div>
+      <div class="artist-bio">
+        <img src="images/nova_lane.png" alt="NOVA LANE" class="bio-photo" />
+        <div class="bio-text">
+          <h3>NOVA LANE</h3>
+          <p id="bio_nova">
+            NOVA LANE es una artista AI creada para cruzar fronteras sonoras.
+            Su voz puede acariciar una balada de R&B, levantar estadios con un
+            himno pop o emocionar con un storytelling country. Con letras
+            que tocan el corazón y melodías que trascienden idiomas, Nova
+            se proyecta como un ícono global. Sus canciones reflejan tanto
+            vulnerabilidad como fortaleza, invitando a la reflexión y al
+            baile. Cada interpretación de Nova es una exploración de
+            emociones humanas a través de la tecnología.
+          </p>
+        </div>
+      </div>
+      <div class="artist-bio">
+        <img src="images/zenixx.png" alt="ZENIXX" class="bio-photo" />
+        <div class="bio-text">
+          <h3>ZENIXX</h3>
+          <p id="bio_zenixx">
+            ZENIXX es pura energía y unión cultural. Sus ritmos afrobeats
+            mezclan la calidez africana con el swing caribeño y el toque
+            latino. Diseñado para que nadie se quede sentado, ZENIXX es
+            el puente entre continentes y el alma de la fiesta. Su música
+            celebra la diversidad y la alegría de compartir, haciendo que
+            cada pista sea un himno a la vida y a la resistencia cultural.
+            ZENIXX invita a todos a un viaje sonoro que cruza mares y derriba
+            fronteras.
+          </p>
+        </div>
+      </div>
+      <div class="artist-bio">
+        <img src="images/lex_vox.png" alt="LEX VOX" class="bio-photo" />
+        <div class="bio-text">
+          <h3>LEX VOX</h3>
+          <p id="bio_lex">
+            LEX VOX es la voz oficial de IlluminAudio. Maestro de las entrevistas,
+            mezcla análisis de datos en tiempo real con el carisma de un
+            presentador humano. En su podcast, conecta artistas, productores,
+            fans y expertos para explorar el futuro de la música y la
+            tecnología. Su capacidad para sintetizar información y contar
+            historias hace de cada episodio una experiencia educativa y
+            entretenida. LEX VOX es el puente entre el público y el
+            universo creativo de IlluminAudio, llevando conversaciones
+            profundas a los oyentes de todo el mundo.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Artist Statement Section -->
+    <section class="artist-statement" id="statement">
+      <h2 id="statement_heading">Declaración Artística</h2>
+      <div class="statement-grid">
+        <div class="statement-card">
+          <h3>KAIRO</h3>
+          <p id="statement_kairo">«Aquí para romper esquemas con música urbana AI.»</p>
+        </div>
+        <div class="statement-card">
+          <h3>NOVA LANE</h3>
+          <p id="statement_nova">«Cruzando fronteras con mi voz.»</p>
+        </div>
+        <div class="statement-card">
+          <h3>ZENIXX</h3>
+          <p id="statement_zenixx">«Ritmos que conectan continentes.»</p>
+        </div>
+        <div class="statement-card">
+          <h3>LEX VOX</h3>
+          <p id="statement_lex">«Conectando humanos y AI en un podcast.»</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- E-commerce Section -->
+    <section class="ecommerce" id="ecommerce">
+      <h2 id="ecommerce_heading">Tienda</h2>
+      <p id="ecommerce_text">Descubre nuestra merch oficial y muestra tu apoyo a IlluminAudio.</p>
+      <div class="product-grid">
+        <div class="product-card">
+          <div class="product-image" id="product1_type">Camiseta</div>
+          <h3 id="product1_title">Camiseta IlluminAudio</h3>
+          <p>$25.00</p>
+          <a href="#" class="btn" id="product1_button">Comprar</a>
+        </div>
+        <div class="product-card">
+          <div class="product-image" id="product2_type">Gorra</div>
+          <h3 id="product2_title">Gorra IlluminAudio</h3>
+          <p>$18.00</p>
+          <a href="#" class="btn" id="product2_button">Comprar</a>
+        </div>
+        <div class="product-card">
+          <div class="product-image" id="product3_type">Sudadera</div>
+          <h3 id="product3_title">Sudadera IlluminAudio</h3>
+          <p>$40.00</p>
+          <a href="#" class="btn" id="product3_button">Comprar</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Multimedia Section -->
+    <section class="media" id="media">
+      <h2 id="media_heading">Multimedia</h2>
+      <div class="media-players">
+        <div class="spotify-player">
+          <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/7DiAo3tq7DAOXwD7cihJx8?utm_source=generator" width="100%" height="352" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+        <div class="youtube-player">
+          <iframe width="100%" height="315" src="https://www.youtube.com/embed/5qap5aO4i9A" title="YouTube player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- Videos Section -->
+    <section class="videos" id="videos">
+      <h2 id="videos_heading">Videos</h2>
+      <div class="video-grid">
+        <iframe src="https://www.youtube.com/embed/DWcJFNfaw9c" title="Video 1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/2OEL4P1Rz04" title="Video 2" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/5qap5aO4i9A" title="Video 3" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </section>
+
+    <!-- Releases Section -->
+    <section class="releases" id="releases">
+      <h2 id="releases_heading">Lanzamientos</h2>
+      <div class="releases-grid">
+        <div class="release-card">
+          <img src="images/release1.png" alt="Release One Cover" />
+          <h3 id="release1_title">Midnight Echoes</h3>
+          <p id="release1_desc">An immersive blend of ambient vibes and pulsing rhythms.</p>
+        </div>
+        <div class="release-card">
+          <img src="images/release2.png" alt="Release Two Cover" />
+          <h3 id="release2_title">Neon Dreams</h3>
+          <p id="release2_desc">A futuristic journey through synth soundscapes.</p>
+        </div>
+        <div class="release-card">
+          <img src="images/release3.png" alt="Release Three Cover" />
+          <h3 id="release3_title">Color Pulse</h3>
+          <p id="release3_desc">Bold beats and vibrant melodies for everyday inspiration.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+      <h2 id="contact_heading">Contáctanos</h2>
+      <p id="contact_text">
+        Nos encantaría saber de ti. Ya seas un artista que quiere formar parte de
+        nuestro roster o un fan con alguna pregunta, ¡escríbenos!
+      </p>
+      <form action="#" method="post">
+        <input id="contact_name" type="text" name="name" placeholder="Tu nombre" required />
+        <input
+          id="contact_email"
+          type="email"
+          name="email"
+          placeholder="Tu correo electrónico"
+          required
+        />
+        <textarea
+          id="contact_message"
+          name="message"
+          rows="5"
+          placeholder="Tu mensaje"
+          required
+        ></textarea>
+        <button id="contact_button" type="submit">Enviar mensaje</button>
+      </form>
+    </section>
+
+    <!-- Bottom Spotify Embed Section -->
+    <section class="bottom-spotify" id="bottom-spotify">
+      <iframe
+        data-testid="embed-iframe"
+        style="border-radius: 12px; width: 100%; height: 352px;"
+        src="https://open.spotify.com/embed/playlist/7DiAo3tq7DAOXwD7cihJx8?utm_source=generator"
+        frameborder="0"
+        allowfullscreen=""
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+        loading="lazy"
+      ></iframe>
+    </section>
+
+  <!-- Biography Modal -->
+  <div id="bio-modal" class="bio-modal">
+    <div class="modal-content">
+      <span class="modal-close">&times;</span>
+      <h3 id="modal-title"></h3>
+      <p id="modal-text"></p>
+    </div>
+  </div>
+  </main>
+
+  <!-- Footer -->
+  <footer id="footer_text">
+    © 2025 IlluminAudio. Todos los derechos reservados.
+  </footer>
+
+  <!-- Scripts for language switching and modals -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const translations = {
+        es: {
+          nav_home: 'Inicio',
+          nav_about: 'Sobre Nosotros',
+          nav_artists: 'Artistas',
+          nav_statement: 'Declaración',
+          nav_bios: 'Biografías',
+          nav_shop: 'Tienda',
+          nav_media: 'Multimedia',
+          nav_videos: 'Videos',
+          nav_releases: 'Lanzamientos',
+          nav_contact: 'Contacto',
+          hero_heading: 'IlluminAudio',
+          hero_text:
+            'Iluminamos el sonido del futuro. Explora nuestros artistas y déjate sorprender por la música generada con inteligencia artificial.',
+          hero_button: 'Descubrir Música',
+          about_heading: 'Sobre Nosotros',
+          about_p1:
+            'IlluminAudio es un sello discográfico nacido en la intersección entre música, tecnología y cultura global. Fundado en 2025, es el primer label 100 % impulsado por inteligencia artificial que no solo crea música, sino que desarrolla artistas virtuales con identidad propia, capaces de interactuar con fans, componer en tiempo real y adaptarse a tendencias culturales al instante.',
+          about_p2:
+            'Nuestra filosofía es clara: “Iluminamos el sonido del futuro”. El logo — una pirámide rota flanqueada por aliens y robots con audífonos — simboliza la ruptura de los límites entre lo humano y lo artificial, y la llegada de nuevas formas de arte.',
+          artists_heading: 'Artistas',
+          statement_heading: 'Declaración Artística',
+          bios_heading: 'Biografías',
+          ecommerce_heading: 'Tienda',
+          ecommerce_text: 'Descubre nuestra merch oficial y muestra tu apoyo a IlluminAudio.',
+          media_heading: 'Multimedia',
+          videos_heading: 'Videos',
+          releases_heading: 'Lanzamientos',
+          contact_heading: 'Contáctanos',
+          contact_text:
+            'Nos encantaría saber de ti. Ya seas un artista que quiere formar parte de nuestro roster o un fan con alguna pregunta, ¡escríbenos!',
+          contact_name: 'Tu nombre',
+          contact_email: 'Tu correo electrónico',
+          contact_message: 'Tu mensaje',
+          contact_button: 'Enviar mensaje'
+          ,
+          // Genres, taglines and statements
+          genre_kairo: 'Género: Reggaetón, Trap, Hip‑Hop',
+          genre_nova: 'Género: R&B, Pop, Country',
+          genre_zenixx: 'Género: Afrobeats, Dancehall',
+          genre_lex: 'Género: Podcast Host',
+          tagline_kairo: 'La voz callejera del futuro.',
+          tagline_nova: 'Cruzando fronteras sonoras.',
+          tagline_zenixx: 'Energía y unión cultural.',
+          tagline_lex: 'Maestro de las entrevistas.',
+          statement_kairo: '«Aquí para romper esquemas con música urbana AI.»',
+          statement_nova: '«Cruzando fronteras con mi voz.»',
+          statement_zenixx: '«Ritmos que conectan continentes.»',
+          statement_lex: '«Conectando humanos y AI en un podcast.»',
+          // Biographies (longer Spanish versions remain the same)
+          bio_kairo:
+            'KAIRO es la voz callejera del futuro. Nacido de algoritmos entrenados con lo mejor de Puerto Rico, Panamá y New York, su flow combina lo clásico del reggaetón con la agresividad del trap y la versatilidad del hip‑hop. Con letras coreables y beats explosivos, domina desde las tarimas underground hasta festivales globales. Sus rimas narran historias de superación, fiesta y cultura urbana, conectando con una generación que busca autenticidad. KAIRO no solo canta; crea experiencias sonoras que fusionan tradición y vanguardia.',
+          bio_nova:
+            'NOVA LANE es una artista AI creada para cruzar fronteras sonoras. Su voz puede acariciar una balada de R&B, levantar estadios con un himno pop o emocionar con un storytelling country. Con letras que tocan el corazón y melodías que trascienden idiomas, Nova se proyecta como un ícono global. Sus canciones reflejan tanto vulnerabilidad como fortaleza, invitando a la reflexión y al baile. Cada interpretación de Nova es una exploración de emociones humanas a través de la tecnología.',
+          bio_zenixx:
+            'ZENIXX es pura energía y unión cultural. Sus ritmos afrobeats mezclan la calidez africana con el swing caribeño y el toque latino. Diseñado para que nadie se quede sentado, ZENIXX es el puente entre continentes y el alma de la fiesta. Su música celebra la diversidad y la alegría de compartir, haciendo que cada pista sea un himno a la vida y a la resistencia cultural. ZENIXX invita a todos a un viaje sonoro que cruza mares y derriba fronteras.',
+          bio_lex:
+            'LEX VOX es la voz oficial de IlluminAudio. Maestro de las entrevistas, mezcla análisis de datos en tiempo real con el carisma de un presentador humano. En su podcast, conecta artistas, productores, fans y expertos para explorar el futuro de la música y la tecnología. Su capacidad para sintetizar información y contar historias hace de cada episodio una experiencia educativa y entretenida. LEX VOX es el puente entre el público y el universo creativo de IlluminAudio, llevando conversaciones profundas a los oyentes de todo el mundo.',
+          // E-commerce items
+          product1_type: 'Camiseta',
+          product1_title: 'Camiseta IlluminAudio',
+          product1_button: 'Comprar',
+          product2_type: 'Gorra',
+          product2_title: 'Gorra IlluminAudio',
+          product2_button: 'Comprar',
+          product3_type: 'Sudadera',
+          product3_title: 'Sudadera IlluminAudio',
+          product3_button: 'Comprar',
+          // Releases titles and descriptions (Spanish and English are identical for titles)
+          release1_title: 'Midnight Echoes',
+          release1_desc: 'Una mezcla inmersiva de vibras ambientales y ritmos pulsantes.',
+          release2_title: 'Neon Dreams',
+          release2_desc: 'Un viaje futurista a través de paisajes de sintetizadores.',
+          release3_title: 'Color Pulse',
+          release3_desc: 'Golpes audaces y melodías vibrantes para inspiración diaria.',
+          // Footer
+          footer_text: '© 2025 IlluminAudio. Todos los derechos reservados.'
+        },
+        en: {
+          nav_home: 'Home',
+          nav_about: 'About',
+          nav_artists: 'Artists',
+          nav_statement: 'Statement',
+          nav_bios: 'Bios',
+          nav_shop: 'Shop',
+          nav_media: 'Media',
+          nav_videos: 'Videos',
+          nav_releases: 'Releases',
+          nav_contact: 'Contact',
+          hero_heading: 'IlluminAudio',
+          hero_text:
+            'Illuminating the sound of the future. Explore our artists and be amazed by music generated with artificial intelligence.',
+          hero_button: 'Discover Music',
+          about_heading: 'About Us',
+          about_p1:
+            'IlluminAudio is a record label born at the intersection of music, technology and global culture. Founded in 2025, it is the first 100% AI-driven label that not only creates music but develops virtual artists with their own identity, capable of interacting with fans, composing in real time and adapting to cultural trends instantly.',
+          about_p2:
+            'Our philosophy is clear: “We illuminate the sound of the future.” The logo—a cracked pyramid flanked by aliens and robots wearing headphones—symbolizes the breaking of boundaries between humans and the artificial, and the arrival of new forms of art.',
+          artists_heading: 'Artists',
+          statement_heading: 'Artist Statement',
+          bios_heading: 'Biographies',
+          ecommerce_heading: 'Shop',
+          ecommerce_text: 'Discover our official merch and show your support for IlluminAudio.',
+          media_heading: 'Media',
+          videos_heading: 'Videos',
+          releases_heading: 'Releases',
+          contact_heading: 'Contact Us',
+          contact_text:
+            'We’d love to hear from you. Whether you’re an artist looking to join our roster or a fan with a question, drop us a line!',
+          contact_name: 'Your name',
+          contact_email: 'Your email',
+          contact_message: 'Your message',
+          contact_button: 'Send Message'
+          ,
+          // Genres, taglines and statements
+          genre_kairo: 'Genre: Reggaeton, Trap, Hip-Hop',
+          genre_nova: 'Genre: R&B, Pop, Country',
+          genre_zenixx: 'Genre: Afrobeats, Dancehall',
+          genre_lex: 'Genre: Podcast Host',
+          tagline_kairo: 'The street voice of the future.',
+          tagline_nova: 'Crossing sonic borders.',
+          tagline_zenixx: 'Energy and cultural unity.',
+          tagline_lex: 'Master of interviews.',
+          statement_kairo: '“Here to break rules with AI-driven urban music.”',
+          statement_nova: '“Crossing borders with my voice.”',
+          statement_zenixx: '“Beats that connect continents.”',
+          statement_lex: '“Connecting humans and AI on a podcast.”',
+          // Biographies translated into English
+          bio_kairo:
+            'KAIRO is the street voice of the future. Born from algorithms trained with the best of Puerto Rico, Panama and New York, his flow blends classic reggaeton with the aggression of trap and the versatility of hip-hop. With catchy lyrics and explosive beats, he dominates everything from underground stages to global festivals. His rhymes tell stories of overcoming obstacles, partying and urban culture, connecting with a generation searching for authenticity. KAIRO doesn’t just sing; he creates sonic experiences that fuse tradition and vanguard.',
+          bio_nova:
+            'NOVA LANE is an AI artist created to cross sonic borders. Her voice can caress an R&B ballad, lift stadiums with a pop anthem or move you with a country storytelling. With lyrics that touch the heart and melodies that transcend languages, Nova projects herself as a global icon. Her songs reflect both vulnerability and strength, inviting reflection and dance. Each performance by Nova is an exploration of human emotions through technology.',
+          bio_zenixx:
+            'ZENIXX is pure energy and cultural unity. His afrobeats rhythms mix African warmth with Caribbean swing and a Latin touch. Designed so no one stays seated, ZENIXX is the bridge between continents and the soul of the party. His music celebrates diversity and the joy of sharing, making each track an anthem to life and cultural resilience. ZENIXX invites everyone on a sonic journey that crosses seas and breaks down borders.',
+          bio_lex:
+            'LEX VOX is the official voice of IlluminAudio. Master of interviews, he blends real-time data analysis with the charisma of a human host. In his podcast, he connects artists, producers, fans and experts to explore the future of music and technology. His ability to synthesize information and tell stories makes each episode an educational and entertaining experience. LEX VOX is the bridge between the public and the creative universe of IlluminAudio, bringing deep conversations to listeners around the world.',
+          // E-commerce items
+          product1_type: 'T-shirt',
+          product1_title: 'IlluminAudio T-shirt',
+          product1_button: 'Buy',
+          product2_type: 'Cap',
+          product2_title: 'IlluminAudio Cap',
+          product2_button: 'Buy',
+          product3_type: 'Hoodie',
+          product3_title: 'IlluminAudio Hoodie',
+          product3_button: 'Buy',
+          // Releases translations
+          release1_title: 'Midnight Echoes',
+          release1_desc: 'An immersive blend of ambient vibes and pulsing rhythms.',
+          release2_title: 'Neon Dreams',
+          release2_desc: 'A futuristic journey through synth soundscapes.',
+          release3_title: 'Color Pulse',
+          release3_desc: 'Bold beats and vibrant melodies for everyday inspiration.',
+          // Footer
+          footer_text: '© 2025 IlluminAudio. All rights reserved.'
+        }
+      };
+      // Use Spanish as fallback for other languages
+      ['zh', 'fr', 'de', 'ja', 'pt', 'it', 'ru', 'ar', 'hi'].forEach((lang) => {
+        translations[lang] = { ...translations.es };
+      });
+
+      // Initialize bios object before language functions to avoid reference errors
+      let bios = {
+        kairo: '',
+        nova_lane: '',
+        zenixx: '',
+        lex_vox: ''
+      };
+
+      function updateLanguage(lang) {
+        const trans = translations[lang] || translations.es;
+        document.getElementById('nav_home').textContent = trans.nav_home;
+        document.getElementById('nav_about').textContent = trans.nav_about;
+        document.getElementById('nav_artists').textContent = trans.nav_artists;
+        document.getElementById('nav_statement').textContent = trans.nav_statement;
+        document.getElementById('nav_bios').textContent = trans.nav_bios;
+        document.getElementById('nav_shop').textContent = trans.nav_shop;
+        document.getElementById('nav_media').textContent = trans.nav_media;
+        document.getElementById('nav_videos').textContent = trans.nav_videos;
+        document.getElementById('nav_releases').textContent = trans.nav_releases;
+        document.getElementById('nav_contact').textContent = trans.nav_contact;
+        document.getElementById('hero_heading').textContent = trans.hero_heading;
+        document.getElementById('hero_text').textContent = trans.hero_text;
+        document.getElementById('hero_button').textContent = trans.hero_button;
+        document.getElementById('about_heading').textContent = trans.about_heading;
+        document.getElementById('about_p1').textContent = trans.about_p1;
+        document.getElementById('about_p2').textContent = trans.about_p2;
+        document.getElementById('artists_heading').textContent = trans.artists_heading;
+        document.getElementById('statement_heading').textContent = trans.statement_heading;
+        document.getElementById('bios_heading').textContent = trans.bios_heading;
+        document.getElementById('ecommerce_heading').textContent = trans.ecommerce_heading;
+        document.getElementById('ecommerce_text').textContent = trans.ecommerce_text;
+        document.getElementById('media_heading').textContent = trans.media_heading;
+        document.getElementById('videos_heading').textContent = trans.videos_heading;
+        document.getElementById('releases_heading').textContent = trans.releases_heading;
+        document.getElementById('contact_heading').textContent = trans.contact_heading;
+        document.getElementById('contact_text').textContent = trans.contact_text;
+        document.getElementById('contact_name').placeholder = trans.contact_name;
+        document.getElementById('contact_email').placeholder = trans.contact_email;
+        document.getElementById('contact_message').placeholder = trans.contact_message;
+        document.getElementById('contact_button').textContent = trans.contact_button;
+
+        // Update artist genres and taglines
+        document.getElementById('genre_kairo').textContent = trans.genre_kairo;
+        document.getElementById('genre_nova').textContent = trans.genre_nova;
+        document.getElementById('genre_zenixx').textContent = trans.genre_zenixx;
+        document.getElementById('genre_lex').textContent = trans.genre_lex;
+        document.getElementById('tagline_kairo').textContent = trans.tagline_kairo;
+        document.getElementById('tagline_nova').textContent = trans.tagline_nova;
+        document.getElementById('tagline_zenixx').textContent = trans.tagline_zenixx;
+        document.getElementById('tagline_lex').textContent = trans.tagline_lex;
+        // Update statements
+        document.getElementById('statement_kairo').textContent = trans.statement_kairo;
+        document.getElementById('statement_nova').textContent = trans.statement_nova;
+        document.getElementById('statement_zenixx').textContent = trans.statement_zenixx;
+        document.getElementById('statement_lex').textContent = trans.statement_lex;
+        // Update biographies visible on page
+        document.getElementById('bio_kairo').textContent = trans.bio_kairo;
+        document.getElementById('bio_nova').textContent = trans.bio_nova;
+        document.getElementById('bio_zenixx').textContent = trans.bio_zenixx;
+        document.getElementById('bio_lex').textContent = trans.bio_lex;
+        // Update e-commerce text
+        document.getElementById('product1_type').textContent = trans.product1_type;
+        document.getElementById('product1_title').textContent = trans.product1_title;
+        document.getElementById('product1_button').textContent = trans.product1_button;
+        document.getElementById('product2_type').textContent = trans.product2_type;
+        document.getElementById('product2_title').textContent = trans.product2_title;
+        document.getElementById('product2_button').textContent = trans.product2_button;
+        document.getElementById('product3_type').textContent = trans.product3_type;
+        document.getElementById('product3_title').textContent = trans.product3_title;
+        document.getElementById('product3_button').textContent = trans.product3_button;
+        // Update releases
+        document.getElementById('release1_title').textContent = trans.release1_title;
+        document.getElementById('release1_desc').textContent = trans.release1_desc;
+        document.getElementById('release2_title').textContent = trans.release2_title;
+        document.getElementById('release2_desc').textContent = trans.release2_desc;
+        document.getElementById('release3_title').textContent = trans.release3_title;
+        document.getElementById('release3_desc').textContent = trans.release3_desc;
+        // Update footer
+        document.getElementById('footer_text').textContent = trans.footer_text;
+        // Update bios for modal
+        bios.kairo = trans.bio_kairo;
+        bios.nova_lane = trans.bio_nova;
+        bios.zenixx = trans.bio_zenixx;
+        bios.lex_vox = trans.bio_lex;
+      }
+      // Set default language
+      updateLanguage('es');
+      document.getElementById('lang-switcher').addEventListener('change', (e) => {
+        updateLanguage(e.target.value);
+      });
+      const cards = document.querySelectorAll('.artist-card');
+      cards.forEach((card) => {
+        card.addEventListener('click', () => {
+          const artistId = card.getAttribute('data-artist');
+          const modal = document.getElementById('bio-modal');
+          document.getElementById('modal-title').textContent = card.querySelector('h3').textContent;
+          document.getElementById('modal-text').textContent = bios[artistId] || '';
+          modal.classList.add('visible');
+        });
+      });
+      document.querySelector('.modal-close').addEventListener('click', () => {
+        document.getElementById('bio-modal').classList.remove('visible');
+      });
+    });
+  </script>
+</body>
+</html>

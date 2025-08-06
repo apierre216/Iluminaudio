@@ -1,0 +1,546 @@
+/*
+  Global variables give the design cohesion. Adjust these values
+  to quickly tweak the look and feel of your site. The minimalist
+  aesthetic is inspired by the clean lines and whitespace of Apple.com.
+*/
+:root {
+  --primary-color: #1d1d1f;
+  --secondary-color: #6e6e73;
+  --accent-color: #0071e3;
+  --background-color: #ffffff;
+  --font-family: 'Inter', Helvetica, Arial, sans-serif;
+}
+
+/* Reset basic elements */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-family);
+  color: var(--primary-color);
+  background-color: var(--background-color);
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.5;
+}
+
+/* Navigation bar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+  background-color: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+/* Logo container holds image and text */
+.navbar .logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+  font-size: 1.5rem;
+  letter-spacing: -0.02em;
+}
+
+/* Logo image sizing */
+.logo-img {
+  height: 40px;
+  width: auto;
+  object-fit: contain;
+}
+
+/* Logo text to accompany the image */
+.logo-text {
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-weight: 500;
+  padding: 5px 0;
+  position: relative;
+  transition: color 0.3s;
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  height: 2px;
+  width: 0;
+  background: var(--accent-color);
+  transition: width 0.3s;
+}
+
+.nav-links a:hover {
+  color: var(--accent-color);
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+/* Hero section */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url('images/banner.png');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  padding: 0 20px;
+  margin-top: 80px; /* offset for the fixed navbar */
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  margin: 0 0 20px;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin: 0 0 30px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 30px;
+  background-color: var(--accent-color);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #005bb5;
+}
+
+/* Main content */
+main {
+  padding: 60px 40px;
+}
+
+section {
+  margin-bottom: 80px;
+}
+
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+/* Artists Grid */
+.artist-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+}
+
+.artist-card {
+  max-width: 300px;
+  text-align: center;
+}
+
+.artist-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.artist-card h3 {
+  margin: 0 0 5px;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.artist-card p {
+  color: var(--secondary-color);
+  font-size: 1rem;
+  margin: 0;
+}
+
+/* Releases Grid */
+.releases-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+}
+
+.release-card {
+  max-width: 300px;
+  text-align: center;
+}
+
+.release-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.release-card h3 {
+  margin: 0 0 5px;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.release-card p {
+  color: var(--secondary-color);
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+/* Artist biographies section */
+.artist-bios {
+  padding: 60px 40px;
+  background-color: #f9f9f9;
+}
+
+.artist-bios h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.artist-bio {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  margin-bottom: 60px;
+  align-items: flex-start;
+}
+
+.artist-bio img.bio-photo {
+  width: 300px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.artist-bio .bio-text {
+  flex: 1;
+  max-width: 600px;
+}
+
+.artist-bio .bio-text h3 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.artist-bio .bio-text p {
+  color: var(--secondary-color);
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-top: 0;
+}
+
+/* Contact section */
+.contact {
+  text-align: center;
+}
+
+.contact p {
+  max-width: 600px;
+  margin: 0 auto 30px;
+  color: var(--secondary-color);
+}
+
+.contact form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact input[type='text'],
+.contact input[type='email'],
+.contact textarea {
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.contact textarea {
+  resize: vertical;
+}
+
+.contact button {
+  padding: 15px;
+  background-color: var(--accent-color);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+.contact button:hover {
+  background-color: #005bb5;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #f7f7f7;
+  color: var(--secondary-color);
+  font-size: 0.9rem;
+}
+
+/* Language switcher */
+.lang-switcher {
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  margin-left: 20px;
+}
+
+/* Artist card hover zoom */
+.artist-card {
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+.artist-card img {
+  transition: transform 0.3s;
+  border-radius: 10px;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+
+.artist-card:hover img {
+  transform: scale(1.05);
+}
+
+/* Biography modal overlay */
+.bio-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.bio-modal.visible {
+  display: flex;
+}
+
+.bio-modal .modal-content {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 30px;
+  max-width: 600px;
+  width: 100%;
+  position: relative;
+  color: var(--primary-color);
+}
+
+.bio-modal .modal-content h3 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.bio-modal .modal-content p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--secondary-color);
+}
+
+.bio-modal .modal-close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 1.5rem;
+  color: var(--secondary-color);
+  cursor: pointer;
+}
+
+/* Artist statement section */
+.artist-statement {
+  padding: 60px 40px;
+  background-color: #f9f9f9;
+}
+
+.statement-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+}
+
+.statement-card {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+
+.statement-card h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+.statement-card p {
+  color: var(--secondary-color);
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+/* E-commerce section */
+.ecommerce {
+  padding: 60px 40px;
+  background-color: #fff;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.product-card {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+
+.product-card .product-image {
+  width: 100%;
+  height: 150px;
+  background-color: #eaeaea;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.product-card h3 {
+  margin: 0 0 10px;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.product-card p {
+  margin: 0 0 15px;
+  color: var(--secondary-color);
+  font-size: 1rem;
+}
+
+.product-card .btn {
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+}
+
+/* Media section */
+.media {
+  padding: 60px 40px;
+  background-color: #f9f9f9;
+}
+
+.media-players {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  align-items: stretch;
+}
+
+.spotify-player iframe,
+.youtube-player iframe {
+  width: 100%;
+  border: none;
+  border-radius: 12px;
+}
+
+/* Videos section */
+.videos {
+  padding: 60px 40px;
+  background-color: #fff;
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.video-grid iframe {
+  width: 100%;
+  height: 200px;
+  border-radius: 12px;
+}
+
+/* Bottom Spotify section */
+.bottom-spotify {
+  padding: 40px 0;
+  background-color: #f9f9f9;
+  margin-top: 0;
+}
+
+/* Releases and releases grid maintain existing styles */
